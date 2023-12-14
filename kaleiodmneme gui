@@ -1,0 +1,30 @@
+import tkinter as tk
+import tkinter.ttk as ttk
+from tkinter.ttk import Label
+
+def main():
+
+    window = tk.Tk()
+
+    window.title("Tiger Eye Discomneme")
+
+    window.geometry("1000x700")
+
+    label = tk.Label(window, text="Tiger Eye.", font=('Times', 48)).place(
+        relx=0.5, rely=0.37, anchor="center")
+
+    labelk = tk.Label(window, text="Kaleidomneme").place(
+        relx=0.5, rely=0.45, anchor="center")
+
+    enter = tk.Button(window, text='Jungle Book').place( #Set command to start jungle book preset
+        relx=0.5, rely=0.55, anchor="center")
+
+    exit = tk.Button(window, text='Exit', command=window.destroy).place(
+        relx=0.5, rely=0.6, anchor="center")
+
+    window.mainloop()
+
+
+if __name__ == "__main__":
+
+    main()
